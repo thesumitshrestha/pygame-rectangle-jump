@@ -22,6 +22,7 @@ jumpCount = 10
 run = True
 
 while run:
+
     pygame.time.delay(100)
 
     for event in pygame.event.get():
@@ -60,6 +61,10 @@ while run:
             jumpCount = 10
 
     win.fill((0, 0, 0))
+
     pygame.draw.rect(win, (255, 0, 0), (x, y, width, height))
+
     pygame.display.update()
+
+
 pygame.quit()
